@@ -15,7 +15,16 @@ Integrantes:
    con una tarjeta gráfica que sirva para correr juegos de última generación, cuando en realidad no la necesita y eso solo aumenta el precio; y está el otro caso 
    en el que alguien necesita un computador para ejecutar redes neuronales con múltiples iteraciones y capas y adquiera uno con procesador de los años 90. Dicho esto, 
    vemos que hace falta asesoramiento frente al tema de la adquisición de productos tecnológicos, en este caso PCs
-   #### Función principal:
+   ##### Función principal:
    > El sistema tiene como objetivo brindar asesoría a los clientes a la hora de escoger un PC para las actividades que ellos requieran. El usuario conversará con 
    el sistema describiendo mediante una serie de pasos las características y/o componentes del PC que desea adquirir y de esta manera, el sistema definirá si el 
    computador es apto o es adecuado para las tareas que desea realizar.
+   
+2. #### Problema a resolver:
+   - ##### Razones para utilizar lógica difusa en la solución:
+     - Dada que la utilidad de los componentes de un computador depende mucho del campo de acción en el cual se usará el PC y que la lógica difusa les da valor cualitativo a los parámetros cuantitativos quisimos definir esa utilidad de los componentes basados en nuestra experiencia y lo que hemos visto de carrera.
+     - En muchos casos la persona que quiere comprar estos equipos no tiene los conocimientos de los componentes de un PC y no toman en cuenta el campo de acción donde será usado, de manera que quisimos pasar estos componentes a términos más sencillos en donde puedan entender sin términos técnicos si es suficiente los componentes para su área de trabajo.
+     - A pesar de que existen personas que tienen conocimiento acerca de la información de los componentes de su PC, esto también tiende a ser algo subjetivo y la opinión respecto a un componente puede variar dependiendo de la persona.
+
+   - #### Nombre del Sistema:
+     - FIS_E-HelpChatbot.
