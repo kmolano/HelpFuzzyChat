@@ -90,6 +90,79 @@ Integrantes:
     
    - Reglas de inferencia difusa.
      ```
-     Print("Casa")
+     RULE 1 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is noExigente then                suficiencia_pc is normal ;
+     RULE 2 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is medioExigente then              suficiencia_pc is mediocre ;
+     RULE 3 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 4 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is media and campos_de_uso is noExigente then suficiencia_pc is calificado ;
+     RULE 5 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is media and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
+     RULE 6 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is media and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 7 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is noExigente then suficiencia_pc is sobre_calificado ;
+     RULE 8 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
+     RULE 9 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 10 : If procesador is malo and ram is mala and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 11 : If procesador is malo and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is muy_mediocre ;
+     RULE 12 : If procesador is malo and ram is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 13 : If procesador is malo and ram is alta and campos_de_uso is noExigente then suficiencia_pc is calificado ;
+     RULE 14 : If procesador is malo and ram is alta and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
+     RULE 15 : If procesador is malo and ram is alta and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 16 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is mala and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 17 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
+     RULE 18 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 19 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is media and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 20 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is media and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
+     RULE 21 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is media and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 22 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is alta and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 23 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 24 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 25 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is mala and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 26 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 27 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is mala and campos_de_uso is exigente then suficiencia_pc is normal ;
+     RULE 28 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is alta and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 29 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 30 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 31 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is alta and campos_de_uso is noExigente then suficiencia_pc is sobre_calificado ;
+     RULE 32 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 33 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is normal ;
+     RULE 34 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is media and campos_de_uso is noExigente then suficiencia_pc is calificado ;
+     RULE 35 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is media and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 36 : If procesador is medio and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is media and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 37 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is media and campos_de_uso is noExigente then suficiencia_pc is normal ;
+     RULE 38 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is media and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 39 : If procesador is medio and ram is media and capacidad_gpu is media and nucleos_procesador is alta and rom is media and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 40 : If procesador is alto and ram is mala and rom is mala and campos_de_uso is noExigente then suficiencia_pc is calificado ;
+     RULE 41 : If procesador is alto and ram is media and campos_de_uso is noExigente then suficiencia_pc is sobre_calificado ;
+     RULE 42 : If procesador is alto and ram is alta and campos_de_uso is noExigente then suficiencia_pc is sobre_calificado ;
+     RULE 43 : If procesador is alto and ram is alta and capacidad_gpu is mala and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 44 : If procesador is alto and ram is alta and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 45 : If procesador is alto and ram is alta and rom is media and campos_de_uso is medioExigente then suficiencia_pc is sobre_calificado ;
+     RULE 46 : If procesador is alto and ram is alta and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 47 : If procesador is alto and ram is media and capacidad_gpu is mala and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 48 : If procesador is alto and ram is media and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is normal ;
+     RULE 49 : If procesador is alto and ram is media and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 50 : If procesador is alto and ram is mala and capacidad_gpu is mala and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 51 : If procesador is alto and ram is mala and rom is mala and campos_de_uso is medioExigente then suficiencia_pc is calificado ;
+     RULE 52 : If procesador is alto and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is sobre_calificado ;
+     RULE 53 : If procesador is alto and ram is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 54 : If procesador is alto and ram is media and capacidad_gpu is mala and rom is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 55 : If procesador is alto and ram is media and capacidad_gpu is mala and rom is media and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
+     RULE 56 : If procesador is alto and ram is media and capacidad_gpu is mala and rom is alta and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 57 : If procesador is alto and ram is media and capacidad_gpu is media and rom is mala then suficiencia_pc is muy_mediocre ;
+     RULE 58 : If procesador is alto and ram is media and capacidad_gpu is media and campos_de_uso is exigente then suficiencia_pc is mediocre ;
+     RULE 59 : If procesador is alto and ram is media and capacidad_gpu is alta and rom is mala and campos_de_uso is exigente then suficiencia_pc is mediocre ; ////
+     RULE 60 : If procesador is alto and ram is media and capacidad_gpu is alta and rom is media and campos_de_uso is exigente then suficiencia_pc is normal ;
+     RULE 61 : If procesador is alto and ram is media and capacidad_gpu is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is calificado ;
+     RULE 62 : If procesador is alto and ram is alta and capacidad_gpu is alta and rom is mala and campos_de_uso is exigente then suficiencia_pc is normal ;
+     RULE 63 : If procesador is alto and ram is alta and capacidad_gpu is alta and nucleos_procesador is alta and rom is media and campos_de_uso is exigente then suficiencia_pc is calificado ;
+    RULE 64 : If procesador is alto and ram is alta and capacidad_gpu is alta and nucleos_procesador is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is calificado ;
+    RULE 65 : If procesador is malo and ram is media and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is noExigente then suficiencia_pc is mediocre;
+    RULE 66 : If procesador is malo and ram is media and capacidad_gpu is mala and nucleos_procesador is medio and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is normal;
+    RULE 67 : If procesador is medio and ram is media and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is noExigente then suficiencia_pc is mediocre;
+    RULE 68 : If procesador is malo and ram is media and capacidad_gpu is alta and nucleos_procesador is alta and rom is alta and campos_de_uso is exigente then suficiencia_pc is mediocre;
+    RULE 69 : If procesador is medio and ram is mala and capacidad_gpu is alta and nucleos_procesador is medio and rom is media and campos_de_uso is exigente then suficiencia_pc is mediocre;
+    RULE 70 : If procesador is medio and ram is mala and capacidad_gpu is mala and nucleos_procesador is medio and rom is media and campos_de_uso is medioExigente then suficiencia_pc is normal;
+    RULE 71 : If procesador is medio and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is medio and campos_de_uso is medioExigente then suficiencia_pc is normal;
+    RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
      ```
 
+d
