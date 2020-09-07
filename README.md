@@ -31,13 +31,62 @@ Integrantes:
 3. #### Descripción del FIS:
    - Variables Lingüísticas de Entrada y de Salida y sus respectivos Universos de discurso
    ```
-   // Fuzzify procesador{malo, medio, alto}
-      FUZZIFY procesador
-    TERM malo := (-2, 0.5) (2, 1) (8.5,0) ;
-    TERM medio := (6.5, 0) (11,1) (15.5,0);
-    TERM alto := (12.5, 0) (18, 1) (22,0);
+   FUZZIFY procesador
+      TERM malo := (-2, 0.5) (2, 1) (8.5,0) ;
+      TERM medio := (6.5, 0) (11,1) (15.5,0);
+      TERM alto := (12.5, 0) (18, 1) (22,0);
    END_FUZZIFY
    ```
+   
+   ```
+   FUZZIFY ram
+      TERM mala := (0, 0.5) (4, 1) (6.5, 0);
+      TERM media := (3.5,0) (10,1)  (17.5,0);
+      TERM alta := (13.5,0) (20,1) (29,0);
+   END_FUZZIFY
+   ```
+   
+   ```
+   FUZZIFY capacidad_gpu
+      TERM mala := (-0.5, 0) (3.5, 1) (7.5, 0) ;
+      TERM media := (4,0) (9,1) (13,0);
+      TERM alta := (9,0) (18,1) (26,0);
+   END_FUZZIFY
+   ```
+   
+   ```
+   FUZZIFY nucleos_procesador
+      TERM malo := (-3, 0) (3, 1) (4.5, 0) ;
+      TERM medio := (3.5,0) (7,1) (9,0);
+      TERM alta := (7,0) (10,1) (14,0);
+   END_FUZZIFY
+   ```
+   
+   ```
+   FUZZIFY rom
+      TERM mala := (0, 0) (256, 1) (300, 0) ;
+      TERM media := (100,0) (780,1) (1300,0);
+      TERM alta := (1000,0) (2050,1) (5100,0);
+   END_FUZZIFY
+   ```
+   
+   ```
+   FUZZIFY campos_de_uso
+      TERM noExigente := (-1, 0) (2, 1) (5.5, 0) ;
+      TERM medioExigente := (3.5,0) (6,1) (7.5,0);
+      TERM exigente := (6.5,0) (9,1) (10,0);
+   END_FUZZIFY
+   ```
+   ```
+   DEFUZZIFY suficiencia_pc
+      TERM muy_mediocre := (0,0)(3,1)(6,0);
+      TERM mediocre  :=  (5,0)(8,1)(10,1)(12,0);
+      TERM normal  :=  (11,0)(14,1)(16,1)(18,0);
+      TERM calificado  := (17,0)(20,1)(22,1)(24,0);
+      TERM sobre_calificado := (23,0)(27,1)(30,0);
+   END_DEFUZZIFY
+   ```
+   
     
    - Reglas de inferencia difusa.
      ```
