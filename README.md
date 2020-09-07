@@ -90,7 +90,10 @@ Integrantes:
     
    - Reglas de inferencia difusa.
      ```
-     RULE 1 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is noExigente then                
+     RULE 1 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is 
+     
+     mala and campos_de_uso is noExigente then 
+     
      suficiencia_pc is normal ;
      RULE 2 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is medioExigente then              suficiencia_pc is mediocre ;
      RULE 3 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
