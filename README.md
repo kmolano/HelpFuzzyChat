@@ -30,12 +30,17 @@ Integrantes:
      - FIS_E-HelpChatbot.
 3. #### Descripción del FIS:
    - Variables Lingüísticas de Entrada y de Salida y sus respectivos Universos de discurso
-    [![carbon-3.png](https://i.postimg.cc/yd36NdCM/carbon-3.png)](https://postimg.cc/S2qbTmsd)
-    [![carbon-3.png](https://i.postimg.cc/fbJDHLyV/carbon-3.png)](https://postimg.cc/rdXBsqST)
-    [![carbon-6.png](https://i.postimg.cc/XqgRNSXM/carbon-6.png)](https://postimg.cc/WqhWSyMS)
-    [![carbon-3.png](https://i.postimg.cc/NfJndxHx/carbon-3.png)](https://postimg.cc/D8G5ZL5W)
-    [![carbon-3.png](https://i.postimg.cc/zB8pzLhB/carbon-3.png)](https://postimg.cc/67bCzpYJ)
-    [![carbon-3.png](https://i.postimg.cc/Pr94LVD0/carbon-3.png)](https://postimg.cc/SJL83rDG)
-    [![carbon-3.png](https://i.postimg.cc/yYcPZXTd/carbon-3.png)](https://postimg.cc/zVDKmh6Z)
-    - Conjuntos Difusos y funciones de pertenencia para cada Variable Lingüística
+   ```
+   // Fuzzify procesador{malo, medio, alto}
+      FUZZIFY procesador
+    TERM malo := (-2, 0.5) (2, 1) (8.5,0) ;
+    TERM medio := (6.5, 0) (11,1) (15.5,0);
+    TERM alto := (12.5, 0) (18, 1) (22,0);
+   END_FUZZIFY
+   ```
+    
+   - Reglas de inferencia difusa.
+     ```
+     Print("Casa")
+     ```
 
