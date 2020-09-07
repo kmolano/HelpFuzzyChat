@@ -94,5 +94,6 @@ Integrantes:
 4. #### Despliegue del FIS con Interfaces Gráficas.
      [![carbon-31.png](https://i.postimg.cc/yxsVTCGx/carbon-31.png)](https://postimg.cc/9Rg5WKCH)
      [![carbon-30.png](https://i.postimg.cc/dVxrN5ww/carbon-30.png)](https://postimg.cc/68C8yL8m)
-     [![carbon-29.png](https://i.postimg.cc/Nj95FBvv/carbon-29.png)](https://postimg.cc/QFDXnLMf)
-     [![carbon-28.png](https://i.postimg.cc/HkDC0g7g/carbon-28.png)](https://postimg.cc/tY5fy85S)
+     [![carbon-28.png](https://i.postimg.cc/fRCt1BsJ/carbon-28.png)](https://postimg.cc/Jsyzk3GL)
+     
+     
