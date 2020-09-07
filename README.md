@@ -100,5 +100,7 @@ Integrantes:
      [![carbon-28.png](https://i.postimg.cc/fRCt1BsJ/carbon-28.png)](https://postimg.cc/Jsyzk3GL)
      [![carbon-27.png](https://i.postimg.cc/SRg3wBgg/carbon-27.png)](https://postimg.cc/fS08drnd)
    -***Segundo caso de estudio***
+     [![carbon-26.png](https://i.postimg.cc/6qCgQ761/carbon-26.png)](https://postimg.cc/0K2cWywp)
+     [![carbon-25.png](https://i.postimg.cc/vBgCpqJy/carbon-25.png)](https://postimg.cc/MMwsBDZ3)
      
      
