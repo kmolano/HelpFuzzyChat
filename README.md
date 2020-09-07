@@ -37,4 +37,5 @@ Integrantes:
     [![carbon-3.png](https://i.postimg.cc/zB8pzLhB/carbon-3.png)](https://postimg.cc/67bCzpYJ)
     [![carbon-3.png](https://i.postimg.cc/Pr94LVD0/carbon-3.png)](https://postimg.cc/SJL83rDG)
     [![carbon-3.png](https://i.postimg.cc/yYcPZXTd/carbon-3.png)](https://postimg.cc/zVDKmh6Z)
+    - Conjuntos Difusos y funciones de pertenencia para cada Variable Lingüística
 
