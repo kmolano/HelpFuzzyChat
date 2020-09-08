@@ -20,15 +20,15 @@ END_VAR
 
 // Fuzzify procesador{malo, medio, alto}
 FUZZIFY procesador
-    TERM malo := (-2, 0.5) (2, 1) (8.5,0) ;
-    TERM medio := (6.5, 0) (11,1) (15.5,0);
-    TERM alto := (12.5, 0) (18, 1) (22,0);
+    TERM malo := (-2, 0.5) (2, 1) (8.5,0);
+    TERM medio := (6.5, 0) (11,1) (14.5,0);
+    TERM alto := (12.5, 0) (18, 1) (17,0);
 END_FUZZIFY
 
 // Fuzzify ram {mala, media, alta}
 FUZZIFY ram
     TERM mala := (0, 0.5) (4, 1) (6.5, 0);
-    TERM media := (3.5,0) (10,1)  (17.5,0);
+    TERM media := (3.5,0) (10,1)  (14,0);
     TERM alta := (13.5,0) (20,1) (29,0);
 END_FUZZIFY
 
@@ -157,7 +157,11 @@ RULEBLOCK No1
     RULE 70 : If procesador is medio and ram is mala and capacidad_gpu is mala and nucleos_procesador is medio and rom is media and campos_de_uso is medioExigente then suficiencia_pc is normal;
     RULE 71 : If procesador is medio and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
     RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is medio and campos_de_uso is medioExigente then suficiencia_pc is normal;
-    RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 73 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 74 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 75 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is exigente then suficiencia_pc is muy_mediocre;
+
+
 END_RULEBLOCK
 
 END_FUNCTION_BLOCK
