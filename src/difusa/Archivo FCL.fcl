@@ -20,9 +20,9 @@ END_VAR
 
 // Fuzzify procesador{malo, medio, alto}
 FUZZIFY procesador
-    TERM malo := (-2, 0.5) (2, 1) (8.5,0);
+    TERM malo := (-2, 0.5) (2, 1) (8.5,0) ;
     TERM medio := (6.5, 0) (11,1) (14.5,0);
-    TERM alto := (12.5, 0) (18, 1) (17,0);
+    TERM alto := (12.5, 0) (18, 1) (22,0);
 END_FUZZIFY
 
 // Fuzzify ram {mala, media, alta}
@@ -94,7 +94,7 @@ RULEBLOCK No1
     RULE 7 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is noExigente then suficiencia_pc is sobre_calificado ;
     RULE 8 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is medioExigente then suficiencia_pc is mediocre ;
     RULE 9 : If procesador is malo and ram is mala and capacidad_gpu is mala and nucleos_procesador is malo and rom is alta and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
-    RULE 10 : If procesador is malo and ram is mala and campos_de_uso is noExigente then suficiencia_pc is normal ;
+    RULE 10 : If procesador is malo and ram is mala and campos_de_uso is noExigente then suficiencia_pc is mediocre ;
     RULE 11 : If procesador is malo and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is muy_mediocre ;
     RULE 12 : If procesador is malo and ram is mala and campos_de_uso is exigente then suficiencia_pc is muy_mediocre ;
     RULE 13 : If procesador is malo and ram is alta and campos_de_uso is noExigente then suficiencia_pc is calificado ;
@@ -157,9 +157,13 @@ RULEBLOCK No1
     RULE 70 : If procesador is medio and ram is mala and capacidad_gpu is mala and nucleos_procesador is medio and rom is media and campos_de_uso is medioExigente then suficiencia_pc is normal;
     RULE 71 : If procesador is medio and ram is mala and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
     RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is medio and campos_de_uso is medioExigente then suficiencia_pc is normal;
-    RULE 73 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
-    RULE 74 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
-    RULE 75 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is exigente then suficiencia_pc is muy_mediocre;
+    RULE 72 : If procesador is medio and ram is media and capacidad_gpu is mala and  rom is alta and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 73 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 74 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is exigente then suficiencia_pc is muy_mediocre;
+    RULE 75 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is medioExigente then suficiencia_pc is mediocre;
+    RULE 76 : If procesador is medio and ram is media and capacidad_gpu is media and  rom is media and nucleos_procesador is malo and campos_de_uso is exigente then suficiencia_pc is muy_mediocre;
+    RULE 77 : If procesador is alto and ram is alta and capacidad_gpu is alta and nucleos_procesador is medio and rom is alta and campos_de_uso is exigente then suficiencia_pc is normal ;
+    RULE 78 : If procesador is alto and ram is alta and capacidad_gpu is alta and nucleos_procesador is malo and rom is alta and campos_de_uso is exigente then suficiencia_pc is mediocre ;
 
 
 END_RULEBLOCK
